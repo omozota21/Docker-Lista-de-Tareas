@@ -1,0 +1,31 @@
+version: '3'
+services:
+  app:
+    build: .
+    container_name: Lista_de_Tareas
+    ports:
+      - "8000:8000" 
+    depends_on:
+      - mongodb
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/My_BD
+    volumes:
+      - .:/app
+    networks:
+      - tarea_net
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - tarea_net
+
+volumes:
+  mongo-data:
+
+networks:
+  tarea_net:

@@ -1,0 +1,67 @@
+Creacción Base de Datos:
+Para la conectividad con la base de datos aunque no haya una inicial con los datos intoducidos
+habría que crear una con el Nombre
+“My_DB”  y la colección llamada “blogs” 
+deberia funcionar todo correcto igualmente dejo una foto informativa  
+
+Además e creado un makefile para la facilidad de arranque del 
+programa si este falla siempre se podra hacer los comandos 
+manuales, dejados a continuación
+
+Arranque de los distintos Apartados: 
+
+My_Project\reactfront\ --> npm start 
+
+My_Project\node\ --> nodemon app  
+si nodemon no te reconoce debes realizar la instalación de 
+npm install -g nodemon
+
+Este proyecto se compone de dos partes 
+
+La parte de la conectividad con la base de datos en
+la que atraves del codigo podemos hacer la conexión ademas
+de crear los mensajes que diran segun realicemos una de 
+las tres opciones (creación, eliminación y modificaión)
+
+Extructura
+node
+    controllers
+        BlogController 
+    datbase
+        db
+
+Para verificar la funcion de la base de datos y que todo funciona 
+correctamente use una extension llamada Thunder client
+puediendo comunicarme y mostrar todos los mesajes como mesjae borrado ...
+
+
+Y la parte de el diseño web con una simple interfaz
+con sus respectivos titulos e iconos y las funciones para
+su respectiva conectividad y funcionalidad
+como la creación, eliminación y modificaión
+
+Extructura
+reactfront
+    src
+        blog
+            CreateBlog
+            EditBlog
+            ShowBlog
+    App
+
+
+
+
+
+
+           
+  *   *
+*   M   *
+  * O *
+*   Z   *
+  * O *
+*   T   *
+  * A *
+*   *   *
+  *    *
+
